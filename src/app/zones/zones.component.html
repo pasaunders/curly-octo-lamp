@@ -1,0 +1,10 @@
+<p>placeholder</p>
+<h3>time zone display</h3>
+<button (click)="changeZone('pst', 0)">PST</button>
+<button (click)="changeZone('mst', 1)">MST</button>
+<button (click)="changeZone('cst', 2)">CST</button>
+<button (click)="changeZone('est', 3)">EST</button>
+<button (click)="clearButton()">Clear</button>
+<h3>
+  <span *ngIf="displaytime != null">{{displaytime | date:'medium'}}</span>
+</h3>
